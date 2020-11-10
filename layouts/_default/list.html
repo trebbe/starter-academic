@@ -8,6 +8,8 @@
   {{ with .Content }}
   <div class="article-style">{{ . }}</div>
   {{ end }}
+  
+{{ end }}
 
   {{ $paginator := .Paginate .Data.Pages }}
   {{ range $paginator.Pages }}
@@ -34,5 +36,5 @@
   {{ partial "pagination" . }}
 </div>
 
-{{ end }}
+
 {{- end -}}
