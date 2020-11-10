@@ -1,4 +1,5 @@
-{{ path.Dir $current_page.RelPermalink }}
+{{ path.Dir .RelPermalink }}
+{{ path.Dir current_page.RelPermalink }}
 {{path.Dir .Page.File.Path}}
 {{ with site.GetPage (path.Dir .Page.File.Path) }}
 
