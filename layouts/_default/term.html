@@ -1,7 +1,9 @@
+{{ path.Dir $current_page.RelPermalink }}
+{{path.Dir .Page.File.Path}}
 {{ with site.GetPage (path.Dir .Page.File.Path) }}
 
-{{path.Dir .Page.File.Path}}
-{{ path.Dir $current_page.RelPermalink}}
+
+
 {{ .Title }}
 {{ .Content }}
 {{ end }}
