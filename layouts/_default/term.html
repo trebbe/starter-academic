@@ -1,6 +1,7 @@
-{{ .Title}}
-
+{{ with site.GetPage "category/catone" }}
+{{ .Title }}
 {{ .Content }}
+{{ end }}
 
 <ul>
   {{ range .Data.Pages }}
