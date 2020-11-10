@@ -6,6 +6,6 @@ header:
   image: "header.jpg"
 ---
 
-
+some text etc..
 
 
